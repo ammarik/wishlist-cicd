@@ -6,6 +6,6 @@ RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 COPY seedJob.xml /usr/share/jenkins/ref/jobs/seed-job/config.xml
 #COPY createJobs.groovy /var/jenkins_home/jobs/seed-job/workspace/createJobs.groovy
 #COPY pipeline_job.groovy /var/jenkins_home/jobs/seed-job/workspace/pipelineJob.groovy
-COPY ../wishlist-be/keys/id_rsa /var/lib/jenkins/.ssh/id_rsa
+COPY /Users/marek/Dev/IdeaProjects/wishlist-be/keys/id_rsa /var/lib/jenkins/.ssh/id_rsa
 
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false

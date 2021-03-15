@@ -3,7 +3,7 @@
 echo "BUILD THE JENKINS DOCKER IMAGE"
 docker build -t jenkins-container .
 echo "RUN THE DOCKER IMAGE"
-docker run -p 8181:8080 -p 50000:50000 --rm jenkins-container
+docker run -p 8181:8080 -p 50000:50000 --rm jenkins-container --name ccc 
 
 
 
